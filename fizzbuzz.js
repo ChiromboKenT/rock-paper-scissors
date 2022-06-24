@@ -1,11 +1,9 @@
 function fizzbuzz(input) {
   for (let i = 1; i <= input; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FIZZBUZZ");
-    } else if (i % 3 === 0) {
-      console.log("FIZZBUZZ");
+    if (i % 3 === 0) {
+      i % 5 === 0 ? console.log("FIZZBUZZ") : console.log("FIZZ");
     } else if (i % 5 === 0) {
-      console.log("FIZZBUZZ");
+      console.log("BUZZ ");
     } else if (isNumPrime(i)) {
       console.log("FiZZBUZZ++");
     } else {
