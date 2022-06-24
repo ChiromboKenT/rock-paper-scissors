@@ -1,0 +1,11 @@
+@value spacing: "../../theme/spacing.module.css";
+@value xs, sm,normal, lg, xl from spacing;
+
+.card {
+  border-radius: sm;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: white;
+  padding: normal;
+  width: 100%;
+  margin: sm;
+}

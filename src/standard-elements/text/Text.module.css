@@ -1,0 +1,11 @@
+/* import your colors... */
+@value colors: "../../theme/colors.module.css";
+
+@value primary from colors;
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: primary;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+/* import your colors... */
+@value colors: "../../theme/colors.module.css";
+@value spacing: "../../theme/spacing.module.css";
+
+@value primary, secondary, darker, light, lighter from colors;
+@value xs, sm,normal, lg, xl from spacing;
+
+.button {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: primary;
+  display: inline-block;
+  padding: sm normal;
+  border: 1px solid primary;
+  color: lighter;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: sm;
+  margin-left: normal;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: secondary;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.button:active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.game {
+  width: 100%;
+  margin: normal;
+  text-align: center;
+  min-height: 7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.secondary {
+  background-color: white;
+  border: primary;
+  color: primary;
+}
